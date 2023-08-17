@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Add this to ensure padding and border are included in element's total width/height */
+    overflow: hidden; 
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Add a font-family for better readability */
+}
+
+main {
+    text-align: center;
+    width: 100%;   
+    max-width: 1440px; /* Set a maximum width to ensure content doesn't get too wide */
+    padding: 10px; /* Add some padding for better spacing */
+    overflow: auto; 
+}
+
+.container {
+    position: relative;
+    border: 1px solid white;
+    background: white; 
+    border-radius: 25px; 
+    width: 32rem; /* Adjust width to 100% */ 
+    max-width: 350px; /* Set a maximum width for responsiveness */
+    height: 400px;
+    display: inline-block;
+    margin: 0; 
+    z-index: 2; 
+}
+ 
+#profile {
+    z-index: 2;
+    position: relative;      
+    margin-top: 80px;  
+    border: 5px solid white; 
+    border-radius: 100px;
+    width: 100px; /* Use width instead of height for responsive images */ 
+    height: 100px;        
+    margin-top: 100px; /* Adjust margin for better spacing */  
+}
+
+ #bg-pattern{
+    position: absolute;
+    display: flex;
+    top: 0;  
+
+ }
+
+hr{
+    margin-top: 30px; 
+    height: 0.5px;            
+    position: relative;
+    border-color: hsl(0, 0%, 100%);               
+}  
+
+ul li{
+    list-style: none;
+    display: inline-block;    
+    padding: 20px;
+    padding-top: 0; 
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif; 
+}
+
+.container h3{
+    font-family: 'Kumbh Sans', sans-serif; 
+    font-size: 18px; 
+    margin-top: 14px;   
+}
+
+.container #age{
+    color: hsl(0, 0%, 59%); 
+    margin-left: 10px;
+}
+
+.container h4{
+    font-size: 16px; 
+    color: hsl(0, 0%, 59%); 
+    margin-top: 10px;  
+}
+
+.container .attribution{
+    font-size: 10px;  
+    bottom: 5px;                   
+    position: relative;
+
+}
+.num-container p{
+    margin-top: 10px; 
+    color: hsl(0, 0%, 59%); 
+}
+
+.header #svg-1{
+    position: absolute;
+    bottom:250px;     
+    right: 52%;      
+    max-width: 100vw; /* Set a fixed width in pixels */  
+    height: 1000px; /* Set a fixed height in pixels */
+    max-width: none; /* Remove max-width constraint */
+    overflow: visible;   
+
+}
+
+.footer #svg-2{
+    position: absolute;
+    overflow: visible;
+    max-width: none;
+    width: 100vw;
+    top: 220px; 
+    left: 52%;          
+    height: 1000px;    
+} 
